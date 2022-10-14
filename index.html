@@ -3,13 +3,165 @@
 <head>
     <title></title> 
     <meta charset="utf-8">
-    
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      
+           *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+           }
+        
+        body {
+            margin-top: 100px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 2000px
+        }
+        header {
+                
+            width: 1000px;
+            height: 670px;
+            position: relative;
+            background-image: url(https://s3-alpha-sig.figma.com/img/753a/a321/98b2b48e2f08c6ba5415a5f77fa3586a?Expires=1666569600&Signature=Re0o07Rl0DwapE4MOuGeYwXmlhafmdNiqWVzZF64WkCegt0Ek33ZNEejE3BsyXzZS-WD4FeQSk2u3zpZrQCTTXuNBU3j-ty52i3Wuz8kE16X7PxZHlbGia15E703gOBibISRqYUTo5gAYhb867aDLEC4k8VEhGDwD-dcy9T~BReDV3Vk8ixWh9cp7F1nHqNtnoWWc5TpeqY-AAvc0c7YFAg86wQiUWV-yJG79Dio44ngG0kkKz6ukJcrMSeU~H~k2F7P1C5RM4EV~9KTUJVpZwT~nZi~EO5yHXDMrAYGCnMHXxZw-~Q6aGCEmsoNLRBbNEFyuDtUibVsTLzvKbRVaQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: 350px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+        nav.container {
+            
+            float:left;
+            margin-right: 300px;
+        }
+        nav ul li {
+            display: flex;
+           
+           
+         font-size: 16px;
+            line-height: 19px;
+           
+           
+        }
+      nav.h2 {
+        
+        margin-top: 100px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 800;
+        overflow: visible;
+      }
+        
+        form {
+            
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            top: 750px ;
+            right:870px ;
+            gap: 13px;
+            width: 750px;
+            padding: 8px 15px;
+            background: #FFFFFF;
+            box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+        }
+        input {
+            font-size: 20px;
+        }
+        .click-search {
+           color: #fff;
+            font-size: 20px;
+            background: #3554D1;
+            padding: 10px
+        }
+        .inf-Apart {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            float: left;
+            background-image: url(https://s3-alpha-sig.figma.com/img/22e6/7f85/12081ad1348f1e435c35c3b8c26264d2?Expires=1666569600&Signature=dL5XkI7t3FmZQhzOxIaSWkYEcM9oPW8X0HKI9HIb-emQ7SPPowr9sbZvCeUlGPOAFpTczax9cjisolRPip9Gz-Bp6jPuneMmQmgLcKNAnF3Il0WxRHHi7eJEAP~FuuLKqArnu50uX6nl8J~CXKVFCwsuBvDKEUB4GNrU3g5EM7peHV2HBA9Wcvfb3a4G8y5VZZqQ-mjWJbpLnc6aGLmx4WDDELjKymYntZ9LXqJQo8r6HCnlIDARSqVSwM5qgnM6wtO9Yk0t~IgE51hb5fY4Mj3Qyv5ltzKOVDn8zJ6RXxASD0sjeY1eojv6aJORmv3wjqA59RFGFwySIvcE8MQWEg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+            line-height: 26px;
+            width: 571px;
+            height: 392px
+        }
+        .text-1 {
+            padding-left: 200px;
+            transform: translateX(400px);
+            
+        }
+        .inf-Apart h2 {
+            font-size: 30px;
+            border-left: 20px;
+        }
+        .inf-Apart button {
+            border-radius:20px ;
+            padding: 10px 28px;
+            color: #3554D1;
+            border-color: #3554D1;
+            margin-top: 20px;
+        }
     </style>
 </head>
   
 <body>
-  
+    <header>
+       <nav class="container">
 
+         <h1> <img style="margin-bottom:50px;" src="https://s3-alpha-sig.figma.com/img/4274/81ba/d1803b2f0ecec3751e89e15bfb385627?Expires=1666569600&Signature=D8I5eLLJ8AhjAQguktQ6OZo8rcQlun3b6VJUbKm7qu6IrOSHNkQyov4jlFHrkjXecPWvrksFziZCC3YE7tF~PIDVoLuX7YGaLR-kgQvqmJBfqg7q8gmWdGtH0Ux3kVY8hlyWHyM~Q08nH-RMuDq6jBlj3-OX0YChY3nr1yrGsWqMDcSkbH6BaAmyXQuCO1SyTYkiOTmwsTY9R9s9qJhnuNtY1wGHabyGUBWjtpN4JIazAw7pZcDGhECVIrBBs6Xr~W-R~tCJ~Ms5OMyQzfu9aE2RGuP4BSrRQl5FVOZlX6Ty3~AgJw~cm-Mtbm0bo2LtkhxUyKksSnFY5yfwhJfqtQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></h1>
+         
+       <ul style="list-style:none;display: flex;gap:25px; margin-left: 750px;color: #fff;" class="login">
+        <li>Login</li>
+        <li>Sign up</li>
+
+       </ul>
+    </nav>
+
+
+    <h2 style=" margin-top: 10px;color:#3554D1; width: 20px;font-size: 64px;"> <span style="color:#0F2480 ;">Modern</span> Apartment House</h2>
+    <br>
+    <p style="width:220px;margin-top:10px;">It is a long established fact that a reader will be distracted by the readable content of</p>
+   <br>
+   <button style="border-radius:20px ;padding: 10px 28px;color: #3554D1;border-color: #3554D1;margin-top: 20px;" type="button">Read More</button>
+</header>
+    <br>
+    <form>
+        
+        <input type="text" placeholder="Searching" id="search" >
+        
+        <input type="text" placeholder="Location" id="location">
+        <button class="click-search" type="button">search</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    <main>
+        <div class="inf-container"></div>
+        <div class="inf-Apart">
+        <div class="text-1"> <h2 style="border-left: 3px solid blue;">About Our Apartment</h2>
+        <br>
+        <p>
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words
+            Read More
+        </p>
+        <button  type="button">READ MORE</button>
+    </div>
+    </div>
+    <br>
+
+    
+        
+    </main>
+    <div>
+        <h2 style="margin-top:500px; text-align: center;font-size: 44px;border-left: 3px solid blue; ">How For Sale</h2>
+        <p style="text-align:center">There are many variations of passages of Lorem Ipsum available, but the</p>
+    </div>
 </body>
+
 </html>
